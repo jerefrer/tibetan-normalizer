@@ -1,0 +1,23 @@
+{
+  "name": "tibetan-normalizer",
+  "version": "0.1.0",
+  "description": "A simple tool to normalize Tibetan Unicode strings.",
+  "main": "dist/tibetan-normalizer.umd.js",
+  "module": "dist/tibetan-normalizer.esm.js",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^4.2.0"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist && mkdir dist",
+    "build": "npm run clean && npm run build:esm && npm run build:umd",
+    "build:esm": "rollup src/tibetan-normalizer.js --format esm --file dist/tibetan-normalizer.esm.js",
+    "build:umd": "rollup src/tibetan-normalizer.js --format umd --name TibetanNormalizer --file dist/tibetan-normalizer.umd.js"
+  },
+  "keywords": [
+    "tibetan",
+    "unicode",
+    "normalize"
+  ],
+  "license": "MIT"
+}
