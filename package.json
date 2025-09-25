@@ -1,7 +1,7 @@
 {
   "name": "tibetan-normalizer",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple tool to normalize Tibetan Unicode strings.",
   "main": "dist/tibetan-normalizer.umd.js",
   "module": "dist/tibetan-normalizer.esm.js",
